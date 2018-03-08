@@ -78,5 +78,9 @@ namespace Rational_CS
         public Rat SubRat(Rat r) => new Rat(this.num * r.den - r.num * this.den, this.den * r.den);
         public Rat MultRat(Rat r) => new Rat(this.num * r.num, this.den * r.den);
         public Rat QuotRat(Rat r) => new Rat(this.num*r.den, this.den*r.num);
+        #region Overloaded operators
+        public static Rat operator +(Rat r1, Rat r2) => new Rat(r1.num * r2.den + r2.num*r1.den, r1.den * r2.den);
+        public static Rat operator -(Rat r1, Rat r2) => new Rat(r1.num * r2.den - r2.num * r1.den, r1.den * r2.den);
+        #endregion
     }
 }

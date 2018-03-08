@@ -15,6 +15,7 @@ namespace Rational_CS
 
             Rat r = r1.SumRat(r2);   //r=r1+r2
             Console.WriteLine($"{r1} + {r2} = {r}");
+            Console.WriteLine($"{r1} + {r2} = {r1+r2}");
             
             r = r1.SubRat(r2);   //r = r1 - r2
             Console.WriteLine($"{r1} - {r2} = {r}");
