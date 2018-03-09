@@ -30,9 +30,8 @@ namespace Rational_CS
             Console.WriteLine($"{r1} / {r2} = {r1 / r2}");
 
             Rat r3 = new Rat(0.112);
-            Console.WriteLine(r3);
-            Console.WriteLine((double)r3);  //explicit conversion
-
+            Console.WriteLine($"{r3} = {(double)r3}");
+           
             Console.ReadKey();
         }
     }
