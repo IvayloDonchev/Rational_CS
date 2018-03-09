@@ -22,36 +22,37 @@ namespace Rational_CS
         private int num, den;   //числител и знаменател
         public Rat() : this(0,1)   //default constructor
         {}
-        private void Normalize(int a, int b)
+        private void Normalize()
         {
-            if (b == 0)
+            if (den == 0)
             {
                 throw new ArgumentException("Incorrect Parameter");
             }
             else
-                 if (a == 0)
+                 if (num == 0)
             {
                 num = 0;
                 den = 1;
             }
             else
             {
-                int g = GCD(Math.Abs(a), Math.Abs(b));
-                if ((a > 0 && b > 0) || (a < 0 && b < 0))   //дробта е положителна
+                int g = GCD(Math.Abs(num), Math.Abs(den));
+                if ((num > 0 && den > 0) || (num < 0 && den < 0))   //дробта е положителна
                 {
-                    num = Math.Abs(a) / g;
-                    den = Math.Abs(b) / g;
+                    num = Math.Abs(num) / g;
+                    den = Math.Abs(den) / g;
                 }
                 else   //дробта е отрицателна
                 {
-                    num = -Math.Abs(a) / g;
-                    den = Math.Abs(b) / g;
+                    num = -Math.Abs(num) / g;
+                    den = Math.Abs(den) / g;
                 }
             }
         }
         public Rat(int a, int b)
         {
-            Normalize(a, b);
+            num = a; den = b;
+            Normalize();
         }
         public Rat(double d)
         {
@@ -66,7 +67,7 @@ namespace Rational_CS
             }
             num = (int)d;
             den = (int)Math.Pow(10, m);
-            Normalize(num, den);
+            Normalize();
         }
         public void Write()
         {
