@@ -19,15 +19,19 @@ namespace Rational_CS
             
             r = r1.SubRat(r2);   //r = r1 - r2
             Console.WriteLine($"{r1} - {r2} = {r}");
+            Console.WriteLine($"{r1} - {r2} = {r1 - r2}");
 
-            r = r1.MultRat(r2);   //r=r1*r2
+            r = r1.MultRat(r2);   //r = r1 * r2
             Console.WriteLine($"{r1} * {r2} = {r}");
+            Console.WriteLine($"{r1} * {r2} = {r1 * r2}");
 
-            r = r1.QuotRat(r2);   //r=r1/r2
+            r = r1.QuotRat(r2);   //r = r1 / r2
             Console.WriteLine($"{r1} / {r2} = {r}");
+            Console.WriteLine($"{r1} / {r2} = {r1 / r2}");
 
             Rat r3 = new Rat(0.112);
             Console.WriteLine(r3);
+            Console.WriteLine((double)r3);  //explicit conversion
 
             Console.ReadKey();
         }
