@@ -35,11 +35,7 @@ namespace Rational
             Normalize();
         }
         #endregion
-        public void Write()
-        {
-            Console.Write($"{num}/{den}");
-          //  Console.Write("{0}/{1}", num, den);
-        }
+        public void Write() => Console.Write($"{num}/{den}");
         public override string ToString() => $"{num}/{den}";
         #region Arithmetic operations
         public Rat SumRat(Rat r) => new Rat(this.num * r.den + r.num * this.den, this.den * r.den);
