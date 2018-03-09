@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Rational;
 
 namespace Rational_CS
 {
@@ -31,6 +32,7 @@ namespace Rational_CS
 
             Rat r3 = new Rat(0.112);
             Console.WriteLine($"{r3} = {(double)r3}");
+            Console.WriteLine((Rat)0.125);
            
             Console.ReadKey();
         }

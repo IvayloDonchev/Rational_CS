@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rational_CS", "Rational_CS\Rational_CS.csproj", "{6D50F513-A570-4A3F-A4C8-83D580952ED4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rational", "Rational\Rational.csproj", "{64BB34D4-F198-44C4-B3A8-E43DFE478A6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6D50F513-A570-4A3F-A4C8-83D580952ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D50F513-A570-4A3F-A4C8-83D580952ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D50F513-A570-4A3F-A4C8-83D580952ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BB34D4-F198-44C4-B3A8-E43DFE478A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BB34D4-F198-44C4-B3A8-E43DFE478A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BB34D4-F198-44C4-B3A8-E43DFE478A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BB34D4-F198-44C4-B3A8-E43DFE478A6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

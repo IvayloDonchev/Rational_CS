@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rational_CS
+namespace Rational
 {
     public class Rat    //рационално число
     {
@@ -52,7 +52,8 @@ namespace Rational_CS
         public static Rat operator -(Rat r1, Rat r2) => new Rat(r1.num * r2.den - r2.num * r1.den, r1.den * r2.den);
         public static Rat operator *(Rat r1, Rat r2) => new Rat(r1.num * r2.num, r1.den * r2.den);
         public static Rat operator /(Rat r1, Rat r2) => new Rat(r1.num * r2.den, r2.num * r1.den);
-        public static explicit operator double(Rat r) => (double)r.num / r.den;
+        public static explicit operator double(Rat r) => (double)r.num / r.den; // form Rat to double
+        public static explicit operator Rat(double d) => new Rat(d);  //from double to Rat
 
         #endregion
         #region Auxiliary functions
