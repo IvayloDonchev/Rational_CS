@@ -32,7 +32,7 @@ namespace Rational_CS
 
             r = new Rat(0.112);
             Console.WriteLine($"{r} = {(double)r}");
-            Console.WriteLine((Rat)0.1024);
+            Console.WriteLine((Rat)(-0.1024));
            
             Console.ReadKey();
         }
