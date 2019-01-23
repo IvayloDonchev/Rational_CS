@@ -30,7 +30,7 @@ namespace Rational
                 d *= 10;
                 m++;
             }
-            num = (int)d;
+            num = (int)d*sign;
             den = (int)Math.Pow(10, m);
             Normalize();
         }
